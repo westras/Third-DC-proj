@@ -29,6 +29,14 @@ footer{
     position: sticky;
     bottom: 0;
 }
+.ingress{
+    background: #e0e0e0; 
+    padding: 15px; 
+    border-radius: 5px; 
+    margin-bottom: 20px;
+    width: 90%;
+    margin: auto;
+}
 
 
 .main{ 
@@ -39,6 +47,7 @@ footer{
     border-radius: 5px; 
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 
 .container{
     display: flex; 
@@ -62,19 +71,23 @@ footer{
     background: #f9f9f9; 
     padding: 15px; 
     border-radius: 5px;
+    min-width: 300px;
+    min-height: 200px;
+    overflow-y: auto;
+    
 }
 
 .bottomcontainer{
     margin-top: 20px; 
     display: flex; 
-    justify-content: center; 
+    justify-content: space-between; 
     gap: 15px;
 }
 .bottomarticle{
     background: #e0e0e0; 
     padding: 15px; 
     border-radius: 5px; 
-    width: 47%;
+    width: 42%;
     min-height: 150px;
     margin: auto;
     margin-top: 20px;
