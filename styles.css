@@ -5,15 +5,21 @@
 }
 
 body{
-    background-color: #f0f0f0;
+    background-color: #FAF8F1;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #334443;
     line-height: 1.6;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 header{
-    background: #4CAF50; 
-    color: #fff; 
+    background: #34656D; 
+    color: #FAF8F1; 
     padding: 10px 0; 
     text-align: center; 
     margin-bottom: 20px;
@@ -21,8 +27,8 @@ header{
     top: 0;
 }
 footer{
-    background: #ff0000; 
-    color: #fff; 
+    background: #334443; 
+    color: #FAF8F1; 
     text-align: center; 
     padding: 10px 0; 
     margin-top: 20px;
@@ -30,7 +36,7 @@ footer{
     bottom: 0;
 }
 .ingress{
-    background: #e0e0e0; 
+    background: #FAEAB1; 
     padding: 15px; 
     border-radius: 5px; 
     margin-bottom: 20px;
@@ -45,7 +51,7 @@ footer{
     background: #fff; 
     padding: 20px; 
     border-radius: 5px; 
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(52,101,109,0.1);
 }
 
 
@@ -59,7 +65,7 @@ footer{
 }
 
 .sidebar{
-    background: #e0e0e0; 
+    background: #FAEAB1; 
     padding: 15px; 
     border-radius: 5px;
     flex: 1;
@@ -68,14 +74,24 @@ footer{
 
 .brödtext{
     flex: 3; 
-    background: #f9f9f9; 
+    background: #FAEAB1; 
     padding: 15px; 
     border-radius: 5px;
     min-width: 300px;
     min-height: 200px;
     overflow-y: auto;
-    
 }
+
+.image{
+    width: 400px;
+  height: 250px;
+  color: #111;
+  border-radius: 50%;
+  float: left;
+  shape-outside: ellipse();
+  padding: 10px;
+  margin-top: 10px;
+    }
 
 .bottomcontainer{
     margin-top: 20px; 
@@ -84,7 +100,7 @@ footer{
     gap: 15px;
 }
 .bottomarticle{
-    background: #e0e0e0; 
+    background: #FAEAB1; 
     padding: 15px; 
     border-radius: 5px; 
     width: 42%;
@@ -92,3 +108,12 @@ footer{
     margin: auto;
     margin-top: 20px;
 }
+
+.byline{
+    font-style: italic; 
+    color: #555; 
+    margin-bottom: 10px;
+    text-align: right;
+    width: 95%;
+}
+
