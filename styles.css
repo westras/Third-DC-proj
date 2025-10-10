@@ -41,6 +41,7 @@ footer{
     border-radius: 5px; 
     margin-bottom: 10px;
     width: 100%;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -93,21 +94,8 @@ footer{
   margin-top: 10px;
     }
 
-.bottomcontainer{
-    margin-top: 20px; 
-    display: flex; 
-    justify-content: space-between; 
-    gap: 15px;
-}
-.bottomarticle{
-    background: #FAEAB1; 
-    padding: 15px; 
-    border-radius: 5px; 
-    width: 42%;
-    min-height: 150px;
-    margin: auto;
-    margin-top: 20px;
-}
+
+
 
 .byline{
     font-style: italic; 
@@ -115,5 +103,8 @@ footer{
     margin-bottom: 10px;
     text-align: right;
     width: 95%;
+    background-color: #FAEAB1;
+    padding: 10px;
+    border-radius: 5px;
 }
 
