@@ -1,110 +1,147 @@
-*{ 
-    margin: 0; 
-    padding: 0; 
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #FAF8F1;
-    font-family: Arial, sans-serif;
     color: #334443;
-    line-height: 1.6;
-    height: 100vh;
+    line-height: 1.7;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    overflow-x: hidden;
     scroll-behavior: smooth;
-    overflow-y: scroll;
 }
-header{
-    background: #34656D; 
-    color: #FAF8F1; 
-    padding: 10px 0; 
-    text-align: center; 
-    margin-bottom: 20px;
-    position: sticky;
-    top: 0;
+
+header {
+    background: #34656D;
+    color: #FAF8F1;
+    padding: 32px 0 18px 0;
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(52,101,109,0.08);
+    margin-bottom: 32px;
 }
-footer{
-    background: #334443; 
-    color: #FAF8F1; 
-    text-align: center; 
-    padding: 10px 0; 
-    margin-top: 20px;
-    position: sticky;
-    bottom: 0;
+
+footer {
+    background: #334443;
+    color: #FAF8F1;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 1.1rem;
+    margin-top: 40px;
+    box-shadow: 0 -2px 8px rgba(52,101,109,0.08);
 }
-.ingress{
-    background: #FAEAB1; 
-    padding: 15px; 
-    border-radius: 5px; 
-    margin-bottom: 10px;
+
+.main {
+    max-width: 900px;
+    margin: 0 auto 32px auto;
+    background: #fff;
+    padding: 32px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(52,101,109,0.10);
+}
+
+.ingress {
+    background: #FAEAB1;
+    padding: 18px 24px;
+    border-radius: 8px;
+    margin: 0 auto 24px auto;
+    max-width: 900px;
+    font-size: 1.15rem;
+    box-shadow: 0 2px 8px rgba(52,101,109,0.06);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
     width: 100%;
-    max-width: 800px;
-    margin: auto;
+    max-width: 900px;
+    margin: 0 auto 24px auto;
 }
 
-
-.main{ 
-    max-width: 800px; 
-    margin: auto; 
-    background: #fff; 
-    padding: 20px; 
-    border-radius: 5px; 
-    box-shadow: 0 0 10px rgba(52,101,109,0.1);
+.sidebar {
+    background: #FAEAB1;
+    padding: 20px 18px;
+    border-radius: 8px;
+    min-width: 180px;
+    flex: 1 1 180px;
+    box-shadow: 0 2px 8px rgba(52,101,109,0.04);
+    font-size: 1rem;
 }
 
-
-.container{
-    display: flex; 
-    flex-direction: row; 
-    gap: 15px;
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-}
-
-.sidebar{
-    background: #FAEAB1; 
-    padding: 15px; 
-    border-radius: 5px;
-    flex: 1;
-    min-width: 150px;
-}
-
-.brödtext{
-    flex: 3; 
-    background: #FAEAB1; 
-    padding: 15px; 
-    border-radius: 5px;
-    min-width: 300px;
-    min-height: 200px;
+.brödtext {
+    flex: 3 1 350px;
+    background: #ddd;
+    padding: 24px 22px;
+    border-radius: 8px;
+    min-width: 320px;
+    min-height: 220px;
     overflow-y: auto;
+    box-shadow: 0 2px 8px rgba(52,101,109,0.04);
+    font-size: 1.08rem;
 }
 
-.image{
-    width: 400px;
-  height: 250px;
-  color: #111;
-  border-radius: 50%;
-  float: left;
-  shape-outside: ellipse();
-  padding: 10px;
-  margin-top: 10px;
+.image {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%; 
+    float: left;
+    margin: 0 24px 18px 0;
+    box-shadow: 0 2px 12px rgba(52,101,109,0.10);
+}
+
+.byline {
+    font-style: italic;
+    color: #34656D;
+    margin-top: 12px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.wholepage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.wholepage-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+    .main, .ingress, .container {
+        max-width: 98vw;
+        padding-left: 8px;
+        padding-right: 8px;
     }
+    .image {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 0 0 18px 0;
+        display: block;
+    }
+}
 
-
-
-
-.byline{
-    font-style: italic; 
-    color: #555; 
-    margin-bottom: 10px;
-    text-align: right;
-    width: 95%;
-    background-color: #FAEAB1;
-    padding: 10px;
-    border-radius: 5px;
+@media (max-width: 700px) {
+   
+    .sidebar, .brödtext {
+        min-width: 0;
+        width: 100%;
+    }
+    .main, .ingress {
+        padding: 12px 4px;
+    }
 }
 
