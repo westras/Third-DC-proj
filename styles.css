@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -53,11 +54,13 @@ footer {
 .container {
     display: flex;
     flex-wrap: wrap;
+    background:#34656D;
     gap: 24px;
     width: 100%;
     max-width: 900px;
     margin: 0 auto 24px auto;
     border: 2px double #34656D
+    
 }
 
 .sidebar {
