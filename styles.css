@@ -75,7 +75,7 @@ footer {
 
 .brödtext {
     flex: 3 1 350px;
-    background: #ddd;
+    background: rgb(243, 224, 190);
     padding: 24px 22px;
     border-radius: 8px;
     min-width: 320px;
