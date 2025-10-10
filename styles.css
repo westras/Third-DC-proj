@@ -38,7 +38,6 @@ footer {
     max-width: 900px;
     border-radius: 12px;
     box-shadow: 0 4px 24px rgba(52,101,109,0.10);
-    
 }
 
 .ingress {
@@ -58,6 +57,7 @@ footer {
     width: 100%;
     max-width: 900px;
     margin: 0 auto 24px auto;
+    border: 2px double #34656D
 }
 
 .sidebar {
